@@ -28,7 +28,6 @@
 
     right_encoder: encoder_right {
         compatible = "alps,ec11";
-        label = "RIGHT_ENCODER";
         // PIN A JUMPER - A3/F4 || P0.31 - D21 ---- PrMicro pin: 21
         a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         // PIN B JUMPER - D4/4 OR P0.22 - D4]] ---- PrMicro pin: 4
@@ -43,8 +42,6 @@
         triggers-per-rotation = <20>;
     };
 };
-
-/delete-node/ &left_encoder;
 
 &right_encoder {
     status = "okay";
