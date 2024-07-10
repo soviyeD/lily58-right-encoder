@@ -25,4 +25,7 @@
     status = "okay";
 };
 
+&sensors {
+    sensors = <&right_encoder>;
+};
 
