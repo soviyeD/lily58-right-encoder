@@ -11,12 +11,6 @@ endif
 
 if SHIELD_LILY58_LEFT || SHIELD_LILY58_RIGHT
 
-config EC11
-    default y
-
-config EC11_TRIGGER_GLOBAL_THREAD
-    default y
-
 config ZMK_SPLIT
     default y
 
