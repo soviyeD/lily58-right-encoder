@@ -3,3 +3,7 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      config_path: config
+      config_repos: ''
+      extra_build_args: '-DZMK_CONFIG=${{ github.workspace }}/config'
